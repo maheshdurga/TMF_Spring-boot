@@ -34,7 +34,7 @@ public class LoginControler {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	} 
-	   return "auth";
+	   return "Login";
 	   
 	   
    }

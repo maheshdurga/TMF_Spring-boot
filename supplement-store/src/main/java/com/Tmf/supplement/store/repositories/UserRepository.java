@@ -1,0 +1,13 @@
+package com.Tmf.supplement.store.repositories;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.Tmf.supplement.store.entites.User;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+	Optional<User>findByEmail(String email);
+	Optional<User>findByEmailAndPassword(String email,String password);
+
+}
